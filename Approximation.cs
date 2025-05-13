@@ -2,9 +2,9 @@
 
 namespace InfoSci
 {
-    public class Resolution
+    static class Approximation
     {
-        public void Euler(float tInitial, float tFinal, int N, float y0, Func<float, float, float> yPrim)
+        public static void Euler(float tInitial, float tFinal, int N, float y0, Func<float, float, float> yPrim)
         {
 
             //Step 1
@@ -26,7 +26,7 @@ namespace InfoSci
             }
         }
 
-        public void PointMilieu(float tInitial, float tFinal, int N, float y0, Func<float, float, float> yPrim)
+        public static void PointMilieu(float tInitial, float tFinal, int N, float y0, Func<float, float, float> yPrim)
         {
             //Step 1
             float h = (tFinal - tInitial) / N;
@@ -48,7 +48,7 @@ namespace InfoSci
             }
         }
 
-        public void RungeKutta4(float tInitial, float tFinal, int N, float y0, Func<float, float, float> yPrim)
+        public static void RungeKutta4(float tInitial, float tFinal, int N, float y0, Func<float, float, float> yPrim)
         {
 
             //Step 1

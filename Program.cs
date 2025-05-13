@@ -15,13 +15,13 @@ namespace InfoSci
 
             float alpha = 1;
 
-            Approximation a = new Approximation();
+  
 
             for (int i = 0; i < h.Length; i++)
             {
                 int N = (int)((b - a) / h[i]);
 
-                a.RungeKutta4(a, b, N, alpha, (t, y) => -y + t + 1);
+                Approximation.RungeKutta4(a, b, N, alpha, (t, y) => -y + t + 1);
 
                 Console.WriteLine();
             }
