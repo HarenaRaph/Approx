@@ -22,7 +22,7 @@ namespace InfoSci
                 t = tInitial + i * h;
 
                 //Step 4
-                Console.WriteLine($"t{i + 1}: {t} y{i + 1}: {w}");
+                Console.WriteLine($"t{i}: {t} y{i}: {w}");
             }
         }
 
@@ -44,7 +44,7 @@ namespace InfoSci
                 t = tInitial + i * h;
 
                 //Step 4
-                Console.WriteLine($"t{i + 1}: {t} y{i + 1}: {w}");
+                Console.WriteLine($"t{i}: {t} y{i}: {w}");
             }
         }
 
@@ -76,7 +76,7 @@ namespace InfoSci
                 t = tInitial + i * h;
 
                 //Step 5
-                Console.WriteLine($"t{i + 1}: {t} y{i + 1}: {w}");
+                Console.WriteLine($"t{i}: {t} y{i}: {w}");
             }
         }
     }
